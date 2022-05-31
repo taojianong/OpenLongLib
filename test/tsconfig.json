@@ -1,0 +1,49 @@
+// {
+//   "compilerOptions": {
+
+//     //输出单个js文件
+//     // "target": "esnext",
+//     // "module": "commonjs",
+//     // "target": "es5",
+//     // "outDir": "./bin/js"
+
+//     // "module": "es6",
+//     // "target": "es6",
+
+//     //输出long.js
+//     "module": "system",
+//     "target": "es6",
+//     "outFile": "bin/bundle.js",
+
+//     "sourceMap": false,
+//     "removeComments": true //编译 js 的时候，删除掉注释
+//     // "typeRoots": [
+//     //   "./node_modules/@types"
+//     // ]
+//   },
+//   "include": [
+//     "../libs/**/*",
+//     "./src/**/*"
+//   ],
+//   "exclude": [
+//     "node_modules"
+//   ]
+// }
+
+{
+  "compilerOptions": {
+    "module": "es6",
+    "target": "es6",
+    "noEmitHelpers": true,
+    "sourceMap": false
+  },
+  "include": [
+    "./libs/**/*.d.ts",
+    "../dist/**/*.d.ts",
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "./libs/**/*",
+  ]
+}
